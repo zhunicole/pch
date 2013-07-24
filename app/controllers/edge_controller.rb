@@ -1,0 +1,2 @@
+class EdgeController < ApplicationController
+end

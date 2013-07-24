@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyTool</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <style type="text/css">
+
+  .node {
+    font: 10px sans-serif;
+  }
+
+/*  .link {
+    stroke: steelblue;
+    stroke-opacity: .4;
+    fill: none;
+  }
+*/
+
+  path.arc {
+  cursor: move;
+  fill: #fff;
+}
+
+/*.node {
+  font-size: 10px;
+}*/
+
+.node:hover {
+  fill: #1f77b4;
+}
+
+.link {
+  fill: none;
+  stroke: #1f77b4;
+  stroke-opacity: .4;
+  pointer-events: none;
+}
+
+.link.source, .link.target {
+  stroke-opacity: 1;
+  stroke-width: 2px;
+}
+
+.node.target {
+  fill: #d62728 !important;
+}
+
+.link.source {
+  stroke: #d62728;
+}
+
+.node.source {
+  fill: #2ca02c;
+}
+
+.link.target {
+  stroke: #2ca02c;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  width: 960px;
+}
+
+button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.bullet { font: 10px sans-serif; }
+.bullet .marker { stroke: #000; stroke-width: 2px; }
+.bullet .tick line { stroke: #666; stroke-width: .5px; }
+.bullet .range.s0 { fill: #eee; }
+.bullet .range.s1 { fill: #ddd; }
+.bullet .range.s2 { fill: #ccc; }
+.bullet .measure.s0 { fill: lightsteelblue; }
+.bullet .measure.s1 { fill: steelblue; }
+.bullet .title { font-size: 14px; font-weight: bold; }
+.bullet .subtitle { fill: #999; }
+
+
+  </style>
+
+</head>
+
+	<%= yield %>
+
+</html>
